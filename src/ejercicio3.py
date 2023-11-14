@@ -8,6 +8,9 @@
     Escriba la función conjunto_potencia(s) que reciba como parámetro un conjunto cualquiera s y 
     retorne su «lista potencia» (la lista de todos sus subconjuntos):
 
->>> conjunto_potencia({6, 1, 4})
+     conjunto_potencia({6, 1, 4})
 [set(), set([6]), set([1]), set([4]), set([6, 1]), set([6, 4]), set([1, 4]), set([6, 1, 4])]
+
+    TRUCO --> FROZENSET()
+
 '''
