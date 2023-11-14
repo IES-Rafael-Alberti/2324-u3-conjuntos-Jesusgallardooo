@@ -14,3 +14,11 @@
     TRUCO --> FROZENSET()
 
 '''
+
+if __name__ == "__main__":
+    #Entrada
+    conjuntoCualquiera = {3,4,5}
+    
+    #Proceso
+    
+    #Salida
