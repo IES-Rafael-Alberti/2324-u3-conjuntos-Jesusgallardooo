@@ -15,10 +15,31 @@
 
 '''
 
+def conjunto_potencia(s):
+    
+    '''Genera y devuelve el conjunto potencia de un conjunto dado.'''
+    
+    potencia = [set()]  # Inicializa el conjunto vacío
+    
+    for elemento in s:
+        # Para cada elemento en s, genera nuevos subconjuntos
+        subconjuntos = []
+        
+        for subconjunto in potencia:
+            # Añade la unión de cada subconjunto con el elemento en la lista subconjuntos[]
+            subconjuntos.append(subconjunto | {elemento})   
+        
+        # Concatena los nuevos subconjuntos a la lista potencia (conjunto vacío creado anteriormente)
+        potencia = potencia + subconjuntos
+    
+    return potencia # Devuelve la lista potencia que guarda cada subconjunto
+
 if __name__ == "__main__":
     #Entrada
-    conjuntoCualquiera = {3,4,5}
+    s = {9, 2, 8}
     
     #Proceso
+    resultado = conjunto_potencia(s)
     
     #Salida
+    print(resultado)
